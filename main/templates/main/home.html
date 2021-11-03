@@ -2,18 +2,32 @@
 {% load static %}
 
 {% block meta %}
-  <center>
-  <title>Hello, world!</title>
-  </center>
+
 {% endblock meta %}
 
 {% block content %}
-  <center>
-  <h1>ASSALAMU'ALAIKUM WR. WB.</h1>
-  <h1>Hello, Welcome To My Project!</h1>
-  <h2><font face="comic sans ms">ERNANDA KUSUMA WIDANARYANTI (191810101089)</font><br></h2>
-  <h2><font face="comic sans ms">FAKULTAS MATEMATIKA DAN ILMU PENGETAHUAN ALAM</font><br></h2>
-  <h2><font face="comic sans ms">UNIVERSITAS JEMBER</font><br></h2>
-  <p><img src="{% static 'img/fotoaku.jpg' %}" style="height:7cm"></p>
-  </center>
+  <body> <center>
+<head>
+<title>Welcome To My Project</title>
+<body bgcolor="pink">
+</body>
+<style>
+    body{
+    background-image:url(pink.jpg);
+    background-size:cover;
+    background-attachment: fixed; }
+
+</style>
+</head>
+
+<body>
+<center>
+  <h1 style="color:rgb(249, 19, 147)">اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَا تُه</h1>
+  <h1 style="color:rgb(249, 19, 147)">Hello, Welcome To My Project !</h1>
+  <p><img src="{% static 'img/fotoaku.jpg' " %}" style="height:10cm"></p>
+  <br>
+  <p>
+  Nama saya Ernanda Kusuma Widanaryanti. Lahir di Lumajang pada tanggal 29 Agustus 2001. Saat ini saya sedang menempuh pendidikan S1 Matematika di Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Jember. Saya adalah pribadi yang suka berproses dan slalu ingin mencari wawasan serta pengalaman baru. Saya selalu berkontribusi dalam organisasi dalam berbagai kepanitiaan di jurusan maupun fakultas sehingga dapat meningkatkan potensi dalam diri sebagai bekal untuk kedepannya.
+  </p>
+    </center>
 {% endblock content %}
